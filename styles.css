@@ -12,6 +12,34 @@
     font-style: normal;
 }
 
+@media (max-width: 768px) {
+    .header {
+        width: 100%; /* Cambiar a 90% para pantallas pequeñas */
+        padding-top: 40px;
+        height: auto; /* Permitir que la altura se ajuste automáticamente */
+    }
+
+    .buttons {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+
+    .button {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño para móviles */
+        padding: 10px; /* Reducir el padding para botones en móviles */
+        width: 80%; /* Botones ocupan el 80% del contenedor */
+        margin: 5px 0; /* Espaciado entre botones */
+        margin-left: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em; /* Tamaño de fuente más pequeño para h1 */
+    }
+
+    p {
+        font-size: 1em; /* Reducir el tamaño de fuente en párrafos */
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -107,34 +135,6 @@ p {
     grid-template-columns: repeat(3, 1fr); /* 3 columnas en escritorio */
     gap: 10px 30px; /* 10px de espacio vertical, 30px de espacio horizontal */
     margin-top: 30px;
-}
-
-@media (max-width: 768px) {
-    .header {
-        width: 100%; /* Cambiar a 90% para pantallas pequeñas */
-        padding-top: 40px;
-        height: auto; /* Permitir que la altura se ajuste automáticamente */
-    }
-
-    .buttons {
-        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
-    }
-
-    .button {
-        font-size: 1.5em; /* Tamaño de fuente más pequeño para móviles */
-        padding: 10px; /* Reducir el padding para botones en móviles */
-        width: 80%; /* Botones ocupan el 80% del contenedor */
-        margin: 5px 0; /* Espaciado entre botones */
-        margin-left: 15px;
-    }
-
-    h1 {
-        font-size: 1.8em; /* Tamaño de fuente más pequeño para h1 */
-    }
-
-    p {
-        font-size: 1em; /* Reducir el tamaño de fuente en párrafos */
-    }
 }
 
 /* Añadir al final de tu archivo styles.css */
